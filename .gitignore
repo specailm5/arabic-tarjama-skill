@@ -18,6 +18,6 @@ __pycache__/
 # IDE
 .vscode/
 
-# Source materials (scanned book + raw OCR) — kept locally, not published
+# Source book files (PDF, OCR) must never be committed or distributed
 source/
 
