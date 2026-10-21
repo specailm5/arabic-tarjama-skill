@@ -144,6 +144,7 @@ mkdir -p ~/.gemini/config/skills/arabic-tarjama-skill && cp -r "$src/." ~/.gemin
 </tr>
 </tbody>
 </table>
+<br clear="all">
 
 **فلتر اللسان — تعريب النص:**
 
@@ -198,6 +199,7 @@ mkdir -p ~/.gemini/config/skills/arabic-tarjama-skill && cp -r "$src/." ~/.gemin
 </tr>
 </tbody>
 </table>
+<br clear="all">
 
 ---
 
@@ -231,6 +233,7 @@ mkdir -p ~/.gemini/config/skills/arabic-tarjama-skill && cp -r "$src/." ~/.gemin
 </tr>
 </tbody>
 </table>
+<br clear="all">
 
 **الترابط العملي:**
 - الترجمة تبدأ من **المعنى**، والكتابة تُحكم **الصياغة**، والقصة تُضبط **النغمة والحوار**.
