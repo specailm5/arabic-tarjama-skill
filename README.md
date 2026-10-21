@@ -1,6 +1,13 @@
 # مهارة فنّ الترجمة العربية
 ### (Arabic Translation Skill — Tarjama + فصحى)
 
+<p align="center">
+  <a href="https://github.com/specailm5/arabic-tarjama-skill/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/specailm5/arabic-tarjama-skill?style=flat-square"></a>
+  <a href="https://github.com/specailm5/arabic-tarjama-skill/commits/master"><img alt="Last commit" src="https://img.shields.io/github/last-commit/specailm5/arabic-tarjama-skill?style=flat-square"></a>
+  <a href="https://specailm5.github.io/arabic-tarjama-skill/"><img alt="Docs" src="https://img.shields.io/badge/docs-live-brightgreen?style=flat-square"></a>
+  <img alt="Agent Skills" src="https://img.shields.io/badge/Agent%20Skills-compatible-5B21B6?style=flat-square">
+</p>
+
 **Arabic translation skill for AI agents** — translates English↔Arabic the way Enani taught: meaning before words, transformation before literalism, living Arabic usage before the dictionary. It diagnoses word, structure, idiom and style problems (`تم التوقيع من قبل` ← `وقّع`, `قام بزيارة` ← `زار`, `The agreement was signed by` ← `وقّع الوزيران`), and filters the result through the anti-العَرَنْجِيَّة rules of `arabic-writing-skill`. Works with Claude Code, Codex, Antigravity and VS Code agent harnesses.
 
 🔗 **الموقع المرجعي (الدليل والألفاظ والتركيب والاصطلاح والشعر والنماذج): [specailm5.github.io/arabic-tarjama-skill](https://specailm5.github.io/arabic-tarjama-skill/)**
@@ -27,7 +34,7 @@
 
 ## 📂 بنية المهارة ومكوناتها
 
-```
+<pre dir="rtl"><code>
 arabic-tarjama-skill/
 │
 ├── skills/arabic-tarjama-skill/          # المهارة (تركيب Agent Skills القياسي)
@@ -45,7 +52,7 @@ arabic-tarjama-skill/
 ├── .agents/skills/arabic-tarjama-skill/  # مسار الاكتشاف التلقائي لبيئات Codex و Antigravity
 │
 └── .claude/skills/arabic-tarjama-skill/  # مسار الاكتشاف التلقائي لبيئة Claude Code
-```
+</code></pre>
 
 ---
 
@@ -101,7 +108,7 @@ mkdir -p ~/.gemini/config/skills/arabic-tarjama-skill && cp -r "$src/." ~/.gemin
 
 **خريطة التشخيص — أين المشكلة؟**
 
-<table dir="rtl">
+<table dir="rtl" align="right">
 <thead>
 <tr>
 <th align="right">المستوى</th>
@@ -140,7 +147,7 @@ mkdir -p ~/.gemini/config/skills/arabic-tarjama-skill && cp -r "$src/." ~/.gemin
 
 **فلتر اللسان — تعريب النص:**
 
-<table dir="rtl">
+<table dir="rtl" align="right">
 <thead>
 <tr>
 <th align="right">الترجمة العرنجية ❌</th>
@@ -198,11 +205,32 @@ mkdir -p ~/.gemini/config/skills/arabic-tarjama-skill && cp -r "$src/." ~/.gemin
 
 هذه المهارة هي **الحلقة الثالثة** في منظومة متكاملة:
 
-| المهارة | مهمّتها | علاقتها بالترجمة |
-| :--- | :--- | :--- |
-| **`arabic-writing-skill`** | تحرير النص العربي من العَرَنْجِيَّة | فلتر اللسان بعد الترجمة |
-| **`arabic-story-skill`** | صنعة القصة والحوار والشخصية | الحوار ومستويات اللغة ووجهة النظر |
-| **`arabic-tarjama-skill`** | نقل المعنى بين اللغتين | الحلقة الجامعة: تشخيص ← تحويل ← صياغة ← تحرير |
+<table dir="rtl" align="right">
+<thead>
+<tr>
+<th align="right">المهارة</th>
+<th align="right">مهمّتها</th>
+<th align="right">علاقتها بالترجمة</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>arabic-writing-skill</code></strong></td>
+<td>تحرير النص العربي من العَرَنْجِيَّة</td>
+<td>فلتر اللسان بعد الترجمة</td>
+</tr>
+<tr>
+<td><strong><code>arabic-story-skill</code></strong></td>
+<td>صنعة القصة والحوار والشخصية</td>
+<td>الحوار ومستويات اللغة ووجهة النظر</td>
+</tr>
+<tr>
+<td><strong><code>arabic-tarjama-skill</code></strong></td>
+<td>نقل المعنى بين اللغتين</td>
+<td>الحلقة الجامعة: تشخيص ← تحويل ← صياغة ← تحرير</td>
+</tr>
+</tbody>
+</table>
 
 **الترابط العملي:**
 - الترجمة تبدأ من **المعنى**، والكتابة تُحكم **الصياغة**، والقصة تُضبط **النغمة والحوار**.
@@ -223,6 +251,24 @@ mkdir -p ~/.gemini/config/skills/arabic-tarjama-skill && cp -r "$src/." ~/.gemin
 * **مهارة كتابة القصة العربية** (`arabic-story-skill`)، مستخلصة من كتاب «فن كتابة القصة» لحسين القباني.
 
 > **إقرار بالفضل:** هذه المهارة صياغةٌ تعليميةٌ مستقلّةٌ لمبادئ كتاب «فن الترجمة» وأمثلته، مع نقل اقتباساتٍ وأمثلةٍ بإسنادها إلى مؤلفها. ولا يتضمّن المستودع نسخةً كاملةً من الكتاب (PDF أو نصّاً مفرَّغاً)، ولا يُغني عن الرجوع إلى الأصل.
+
+---
+
+## 🤝 المساهمة
+
+نرحب بالمساهمات التي تحسّن المادة أو التحرير أو التوثيق. اقرأ [CONTRIBUTING.md](CONTRIBUTING.md) قبل فتح طلب سحب، والتزم بـ[قواعد السلوك](CODE_OF_CONDUCT.md).
+
+## 🛡️ الأمان
+
+إن وجدت مشكلة أمنية، فلا تفتح قضية عامة؛ راجع [SECURITY.md](SECURITY.md).
+
+## 📄 سجل التغييرات
+
+راجع [CHANGELOG.md](CHANGELOG.md) لمعرفة ما أُضيف في كل إصدار.
+
+## 📬 الدعم
+
+للأسئلة والاقتراحات: [افتح قضية](https://github.com/specailm5/arabic-tarjama-skill/issues).
 
 ---
 
